@@ -30,7 +30,7 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
         b1.setEnabled(false);
         b1.addActionListener(this);
         add(b1);
-        
+
         setFocusable(true);
         addKeyListener(this);
         requestFocusInWindow();
@@ -88,7 +88,7 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
                     if (counter < 1) {
                         timer.stop();
                         JOptionPane.showMessageDialog(null, "Game Over. Your score was: " + score);
-                        System.exit(10); 
+                        System.exit(10);
                     }
                 }
             };
